@@ -53,11 +53,32 @@
         <div>
             <label for="education">Education</label>
             <select name="edu" id="">
-                <option value="highschool">Highschool</option>
-                <option value="bechelow">Bechelow's degree</option>
-                <option value="masster">Masster degree</option>
+                <option value="highschool" >Highschool</option>
+                <option value="bechelow">Bechelow degree</option>
+                <option value="masster" selected>Masster degree</option>
             </select>
         </div>
+        <div>
+            <!--radio choices (same name)-->
+            <label for="gender">Gender</label>
+            <input type="radio" name="gender">Men
+            <input type="radio" name="gender">Women
+        </div>
+        <div>
+            <!--radio , can selectec multiple choices (set different name)-->
+            <label for="parents">Parents</label>
+            <input type="radio" name="father">Father
+            <input type="radio" name="mother">Mother
+        </div>
+        <div>
+            <!--check box-->
+            <label for="favorite-book">Favorite book</label>
+            <input type="checkbox" name="book">Book1
+            <input type="checkbox" name="book">Book2
+            <input type="checkbox" name="book">Book3
+            <input type="checkbox" name="book">Others
+        </div>
+
     </form>
     
 </body>

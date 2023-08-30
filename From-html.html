@@ -4,13 +4,19 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Register form</title>
+    <style>
+        form{
+            border: solid 1px red;
+            padding: bottom 50 rem;
+        }
+    </style>
 </head>
 <body>
     <h1 align="center">Register Now</h1>
     <form action="" align="center">
         <div>
             <label for="name">Name</label>
-            <input type="text" name="" placeholder="type your name">
+            <input type="text" name="" placeholder="type your name" required>
         </div>
         <div>
             <labe for="lastname">Last name</labe>
@@ -22,7 +28,7 @@
         </div>
         <div>
             <label for="password">Password</label>
-            <input type="password" name="" placeholder="type your password">
+            <input type="password" name="" placeholder="type your password" required>
         </div>
         <div>
             <label for="textarea">Address</label>
@@ -62,7 +68,7 @@
             <!--radio choices (same name)-->
             <label for="gender">Gender</label>
             <input type="radio" name="gender">Men
-            <input type="radio" name="gender">Women
+            <input type="radio" name="gender">Women  
         </div>
         <div>
             <!--radio , can selectec multiple choices (set different name)-->
@@ -78,8 +84,19 @@
             <input type="checkbox" name="book">Book3
             <input type="checkbox" name="book">Others
         </div>
-
+        <div>
+            <lebel for="attach-file">File attach</lebel>
+            <input type="file" name="attach-file">
+        </div>
+        <div>
+            <lebel for="attach-website">Your website</lebel>
+            <input type="text" name="attach-website">
+        </div>
+        <div>
+            <button type="submit">Save</button>
+            <button type="reset">Reset</button>
+        </div>
     </form>
-    
+    <span>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Harum unde ipsum libero dolore nisi, dignissimos at nulla sit deleniti corrupti, quam explicabo sed possimus iste voluptas est nam! Modi, deleniti.</span>    
 </body>
 </html>
